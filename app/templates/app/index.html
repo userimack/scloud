@@ -7,6 +7,13 @@
 <h1>Hello There!!</h1>
 
 <!-- <a href="/upload/"><button>Upload</button></a> -->
+
+{% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+    
  <form action="/music/" method="post" enctype="multipart/form-data">
         {% csrf_token %} 
      <!--  <h3>Music File {{ form.musicfile }} </h3>   -->
