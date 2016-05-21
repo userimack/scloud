@@ -12,5 +12,5 @@ from django.db import models
 #     def __str__(self):
 #         return self.track_url
 
-# class Upload(models.Model):
-#     musicfile = models.FileField()
+class Home(models.Model):
+    file = models.FileField(upload_to='music')

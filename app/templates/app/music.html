@@ -16,12 +16,9 @@
 </div>
 <div>
     {% if follow and user_url %}
-        <button>Download</button>
+    
+        <a href="/media/{{file}}"><button>Download</button></a>
     {% endif %}
 </div>
 </body>
-{% if follow and user_url %}
-        <button>Download</button>
-    {% endif %}
-
 </html>
