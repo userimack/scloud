@@ -6,7 +6,7 @@ class HomeForm(forms.ModelForm):
     track_url = forms.CharField()
     user_url = forms.CharField(required=False)
     follow = forms.BooleanField(required=False)
-    #file = forms.FileField()
+    #file = forms.FileField() #To use the modals so that we can store the files locally
     
     class Meta:
         model = Home

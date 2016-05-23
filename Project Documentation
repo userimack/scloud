@@ -1,0 +1,8 @@
+Project Name: SCLOUD
+
+To setup the app to use this things need to be done:
+1. Create a virtual environment using virtualenv command and then activate it.
+2. Install the requirements file using the command "pip install -r requirements.txt"
+3. Fill up the .env file with the correct values of client_id, client_secret, username and password of soundcloud. 
+4. Now export the .env file using the command "export $(cat .env)" 
+5. Now fire up the command "python manage.py runserver" to get the running.

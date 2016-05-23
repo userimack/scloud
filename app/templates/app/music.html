@@ -6,17 +6,12 @@
 <body>
 <h1>Music</h1>
 
-
-<h4>{{ track_url }} </h4>
-<h4>{{user_url}}</h4>
-<h4>{{follow}}</h4>
-
 <div>
 <iframe   width=50% src="http://api.soundcloud.com/tracks/{{track_id}}/stream?client_id=9576451089f21de7560a61e6750f85b3" ></iframe>
 </div>
 <div>
-    {% if follow and user_url %}
-    
+    {% if follow and user_url %} <!-- To check if the follow and user_url is provided if not then hide this button -->
+
         <a href="/media/{{file}}"><button>Download</button></a>
     {% endif %}
 </div>
