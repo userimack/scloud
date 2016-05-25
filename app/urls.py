@@ -4,10 +4,11 @@ from django.conf.urls.static import static
 
 from . import views
 
-urlpatterns = [
+urlpatterns = patterns('',
     url(r'^$',views.index, name='index'),
     url(r'^music/$',views.music, name='music'),
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    )
+    # ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # if settings.DEBUG:
 #     urlpatterns =patterns('',
